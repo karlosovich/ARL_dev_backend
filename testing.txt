@@ -1,0 +1,21 @@
+1.
+Feature: consultar datos de riesgo 
+	Para que el servicio de informacion genere valor, tiene que poder consulatrse la informacion
+	En todo momento
+ 
+Scenario: consultar riesgos de mi departamento
+Given: la inforamcion esta disponible en la base de datos
+And: he pedido la informacion (get)
+When: cuando presione el boton de buscar informacion 
+Then: deberia tener la inforamcion de riesgos de mi departamento 
+
+2.
+Feature: Ingresar nuevos datos sobre riesgo en mi departamento
+	Para que el servicio de informacion este actualizado, se debe poder agregar informacion al sistema
+	En todo momento
+
+Scenario: agregar un registro de riesgos de mi departamento
+Given: se puede actualizar la informacion en el base de datos
+And: he registrado la informacion que queiro agregar
+When: cuando presione el boton de agregar riesgo 
+Then: deberia agreagr la inforamcion en la base de datos y recibir un comunicado que el proceso fue ejecutado con exito 
